@@ -1,0 +1,11 @@
+config {
+  type: "table",
+  database: "qa",
+  schema: "public",
+	name: "country_store_cnt"
+}
+select iso_country_nm,count(distinct location_nm) store_cnt
+from  ${ref("cd")}
+group by iso_country_nm
+order by store_cnt desc
+

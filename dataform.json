@@ -1,0 +1,6 @@
+{
+    "warehouse": "redshift",
+    "defaultSchema": "public",
+    "assertionSchema": "public",
+    "useRunCache": false
+}

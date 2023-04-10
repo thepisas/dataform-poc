@@ -1,0 +1,7 @@
+config {
+  type: "view",
+  database: "qa",
+  schema: "public",
+	name: "cd"
+}
+select * from  ${ref("channel_dim")} limit 100
