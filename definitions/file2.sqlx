@@ -4,4 +4,5 @@ config {
   schema: "public",
 	name: "cd"
 }
-select * from  ${ref("channel_dim")} limit 100
+select * from  ${ref("channel_dim")} where retail_chain_nm = '${constants.retail_chain_nm}' limit 100
+
